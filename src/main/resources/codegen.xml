@@ -1,0 +1,34 @@
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.14.0.xsd">
+  <generator>
+
+    <name>org.jooq.codegen.JavaGenerator</name>
+
+    <database>
+      <name>org.jooq.meta.extensions.ddl.DDLDatabase</name>
+    </database>
+
+    <generate>
+      <javaTimeTypes>true</javaTimeTypes>
+      <generatedAnnotation>true</generatedAnnotation>
+      <jpaAnnotations>true</jpaAnnotations>
+      <jpaVersion>2.2</jpaVersion>
+      <records>false</records>
+      <pojos>true</pojos>
+      <daos>false</daos>
+      <indexes>false</indexes>
+      <tables>false</tables>
+      <pojosEqualsAndHashCode>true</pojosEqualsAndHashCode>
+      <pojosToString>true</pojosToString>
+      <relations>false</relations>
+      <globalCatalogReferences>true</globalCatalogReferences>
+      <globalSchemaReferences>true</globalSchemaReferences>
+      <serializablePojos>true</serializablePojos>
+    </generate>
+
+    <target>
+      <packageName>com.mycompany.entity</packageName>
+      <directory>src/main/java</directory>
+    </target>
+
+  </generator>
+</configuration>
